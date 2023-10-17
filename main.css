@@ -1,0 +1,81 @@
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  --Font-size-paragraph: 16px;
+  --Family-Red-Hat-Display: url("https://fonts.google.com/specimen/Red+Hat+Display");
+  --Weights: 500, 700, 900;
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Red Hat Display", sans-serif;
+}
+body {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: var(--Very-pale-blue);
+}
+.centered-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Optionally, you can set a maximum width to prevent it from spanning the entire screen */
+  /* max-width: 80%; */
+  /* Add any other styles you need */
+
+  border-radius: 20px;
+}
+.card-img-top {
+  border-radius: 20px 20px 0px 0px;
+}
+.head1 {
+  font-weight: 1000;
+  font-size: 20px;
+}
+.para1 {
+  padding: 10px;
+  font-size: 15px;
+}
+.paybox {
+  padding: 17px;
+  border-radius: 12px;
+}
+.font-weight {
+  font-weight: 700;
+}
+.link1 {
+    color: var(--Bright-blue);
+    font-size: 13px;
+}
+.card-body{
+    padding: 47px !important;
+}
+.btncss{
+    background-color: var(--Bright-blue);
+    color: white;
+    padding: 10px;
+    width:100%;
+    font-size: 13px;
+    box-shadow: 14px 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.cancletext{
+    font-size: 13px;
+    font-weight: 500;
+
+}
+
+@media screen and (max-width: 768px) {
+    /* CSS rules for all mobile devices (screen width less than or equal to 768px) */
+    /* Place your mobile-specific styles here */
+    
+   body {
+        background-image: url('./images/pattern-background-mobile.svg');
+        /* Different image for mobile devices */
+      }
+  }
+  
